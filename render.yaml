@@ -1,7 +1,7 @@
 services:
   - type: web
     name: book-my-field
-    env: java
+    runtime: java
     buildCommand: "./mvnw clean package"
     startCommand: "java -jar target/book-my-field-1.0-SNAPSHOT.jar"
     plan: free

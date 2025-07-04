@@ -1,0 +1,7 @@
+@import url('./main-layout.css');
+@import url('./views/dashboard-view.css');
+@import url('./views/my-bookings-view.css');
+
+.custom-sidenav vaadin-side-nav-item {
+    margin-bottom: 30px;
+}

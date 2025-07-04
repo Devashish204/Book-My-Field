@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${subject}">Email Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        .header {
+            font-size: 22px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .content {
+            font-size: 16px;
+            color: #555;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+        }
+        .highlight {
+            color: #1a73e8;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header" th:text="${title}">Booking Update</div>
+
+<div class="content">
+    <p>Hello <span th:text="${customerName}">Customer</span>,</p>
+    <p>Your booking has been <strong>confirmed</strong> successfully.</p>
+    <p><strong>Booking ID:</strong> <span th:text="${bookingId}">#12345</span></p>
+    <p><strong>Date:</strong> <span th:text="${date}">01-Jan-2025</span></p>
+    <p>Thank you for choosing us!</p>
+</div>
+    <div class="footer">
+        &copy; 2025 Book My Field Inc. All rights reserved.
+    </div>
+</div>
+</body>
+</html>
